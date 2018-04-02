@@ -1,0 +1,29 @@
+nav
+	@include rowMaker(2, 0)
+	//width: calc-percent(540px, 940px) //540px
+	height: 190px
+	float: left
+	text-align: right
+	@media (max-width: 904px)
+		@include rowMaker(1, 1%)
+		height: 25px
+		float: none
+		text-align: center
+		
+	ul
+		list-style-type: none
+		margin-top: 95px
+		@media (max-width: 904px)
+			margin-top: 0
+		li
+			display: inline
+			font-size: 0.8em
+			margin-right: 10px
+			@media (max-width: 904px)
+				font-size: $font-size
+			a
+				color: $redsalmon
+				text-decoration: none
+				letter-spacing: -0.01em
+				&:hover
+					color: $white

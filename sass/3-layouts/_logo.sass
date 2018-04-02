@@ -1,0 +1,9 @@
+figure 
+	@include rowMaker(2, 0)
+	height: 190px
+	#{$bg}: url('../images/logo.png') no-repeat 0 50px
+	float: left
+	@media (max-width: 904px)
+		@include rowMaker(1, 1%)
+		float: none
+		#{$bg}: url('../images/logo.png') no-repeat center

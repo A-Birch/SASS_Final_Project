@@ -1,0 +1,36 @@
+header 
+	width: inherit
+	clear: both
+	text-align: center
+	padding-top: 40px
+	img
+		max-width: 100%
+		height: auto
+	h1
+		@include fontStyle($redsalmon, 4em, 0, $thin)
+		//color: $redsalmon
+		//font-weight: 100
+		//font-size: 4em
+		//line-height: 0
+		@media (max-width: 904px)
+			@include fontStyle($redsalmon, 3.5em, 0, $thin)
+		@media (max-width: 767px)
+			@include fontStyle($redsalmon, 2.5em, 0, $thin)
+	h2
+		@include fontStyle($white, 2.5em, 0, $heavy)
+		//color: $white
+		//font-weight: 900
+		//font-size: 2.5em
+		//line-height: 0
+		margin-bottom: 70px
+		@media (max-width: 590px)
+			@include fontStyle($white, 1.8em, 0, $heavy)
+	h3
+		@include fontStyle($grey, 2em, 0, $normal)
+		//color: $grey
+		//font-weight: 400
+		//font-size: 2em
+		//line-height: 0
+		margin-bottom: 50px
+		@media (max-width: 767px)
+			@include fontStyle($grey, 1.5em, 0, $normal)

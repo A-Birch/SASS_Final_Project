@@ -1,0 +1,14 @@
+// MIXINS
+
+@mixin fontStyle($color, $font-size, $line-height: 1em, $font-weight: 400)
+	color: $color
+	font-size: $font-size
+	line-height: $line-height
+	font-weight: $font-weight
+
+@mixin rowMaker($numPerRow, $margin)
+	width: ((100% - ($numPerRow - 1) * $margin) / $numPerRow)
+	&:nth-child(n)
+		margin: 0 $margin $margin 0
+	&:nth-child(#{$numPerRow}n)
+		margin-right: 0

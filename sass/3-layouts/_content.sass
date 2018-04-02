@@ -1,0 +1,26 @@
+#content 
+	max-width: 940px
+	margin: 20px auto
+	padding: 0 10px
+	h3 
+		@include fontStyle($grey, 2em)
+		//color: $grey
+		//font-size: 2em
+		//font-weight: 400
+	#products
+		@include rowMaker(2, 2%)
+		float: left
+		@media (max-width: 768px)
+			@include rowMaker(1, 1%)
+		img 
+			float: left
+			margin-right: 20px
+		article 
+			margin-bottom: 40px
+		h4
+			line-height: 1em
+	#testimonials 
+		@include rowMaker(2, 2%)
+		float: right
+		@media (max-width: 768px)
+			@include rowMaker(1, 1%)
